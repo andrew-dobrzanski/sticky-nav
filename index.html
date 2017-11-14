@@ -1,0 +1,822 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sticky Nav Template</title>
+  <!-- CSS -->
+  <link rel="stylesheet" href="./css/style.css" type="text/css">
+
+  <!--font-awesome css-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
+
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <!-- Modernizr js -->
+  <script src="js/modernizr.custom.js"></script>
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+   <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+   <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <div class="row">
+        <div id="company-info" class="col-md-4 slideInUp animated">
+          <a href="tel:9712804560">971.280.4560</a>
+        </div>
+        <div id="company-logo" class="col-md-4 slideInUp animated">
+          <a href="#"><img src="./images/dst-logo.png" alt="Company logo"></a>
+        </div>
+        <div id="company-social" class="col-md-4 slideInUp animated">
+          <!-- Social links -->
+          <ul class="social-icons">
+            <li>
+              <a href="https://www.facebook.com/" target="_blank" class="tooltips" data-toggle="tooltip" data-placement="top" title="" data-original-title="Facebook">
+                <i class="fa fa-facebook"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/" target="_blank" class="tooltips" data-toggle="tooltip" data-placement="top" title="" data-original-title="Instagram">
+                <i class="fa fa-instagram"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://twitter.com/" target="_blank" class="tooltips" data-toggle="tooltip" data-placement="top" title="" data-original-title="Twitter">
+                <i class="fa fa-twitter"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://plus.google.com" target="_blank" class="tooltips" data-toggle="tooltip" data-placement="top" title="" data-original-title="Google Plus">
+                <i class="fa fa-google-plus"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/" target="_blank" class="tooltips" data-toggle="tooltip" data-placement="top" title="" data-original-title="Linkedin">
+                <i class="fa fa-linkedin"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://dribbble.com/" target="_blank" class="tooltips" data-toggle="tooltip" data-placement="top" title="" data-original-title="Dribbble">
+                <i class="fa fa-dribbble"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </header>
+  <nav id="main" class="navbar navbar-default">
+    <div class="container-fluid">
+      <!-- brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+
+      <!-- collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li class="logo"><a href="/"><img src="./images/dst-text-logo.png" alt="Company logo"></a></li>
+          <li class="active"><a href="#">Home<span class="sr-only">(current)</span></a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Services <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Service 1</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="#">Service 2</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="#">Service 3</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav>
+
+  <div id="main-container">
+    <div id="main-carousel" class="carousel slide" data-ride="carousel">
+      <!-- indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#main-carousel" data-slide-to="0" class="active"></li>
+        <li data-target="#main-carousel" data-slide-to="1"></li>
+        <li data-target="#main-carousel" data-slide-to="2"></li>
+      </ol>
+
+      <!-- wrapper for slides -->
+      <div class="carousel-inner">
+        <!-- slide 1 -->
+        <div class="item active">
+          <img src="http://placehold.it/1903x475">
+        </div>
+        <!-- slide 2 -->
+        <div class="item">
+          <img src="http://placehold.it/1903x475">
+        </div>
+        <!-- slide 3 -->
+        <div class="item">
+          <img src="http://placehold.it/1903x475">
+        </div>
+      </div>
+
+      <!-- left and right controls -->
+      <a class="left carousel-control" href="#main-carousel" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#main-carousel" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+
+    <!-- strip banner -->
+    <section class="strip-banner">
+    	<div class="container">
+    		<div class="row">
+          <!-- strip banner content -->
+    			<div class="strip-banner-content col-md-9 col-xs-12">
+    				<h1>Call to Action Banner</h1>
+    				<p>Lorem ipsum dolor sit amet, consectetur adipiscing metus. elit. Quisque rutrum pellentesque imperdiet. Lorem ipsum dolor sit amet, consectetur adipiscing metus. elit. Quisque rutrum pellentesque imperdiet.</p>
+    			</div>
+          <!-- strip banner button -->
+    			<div class="strip-banner-btn col-md-3 col-xs-12">
+    				<a class="border-btn" href="#">Click Here</a>
+    			</div>
+    		</div>
+    	</div>
+    </section>
+
+    <!-- recent projects -->
+    <section id="recent-projects" class="container caption-active caption-overlay">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="center-heading">
+            <h2>Recent <strong>Projects</strong></h2>
+            <span class="center-line"></span>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <ul id="grid" class="grid effect-2">
+          <!-- project 1 -->
+          <li class="prod-item">
+            <a class="caption" data-title="Project<br>Example" href="">
+              <!-- project image -->
+              <div class="prod-image">
+                <img src="http://placehold.it/318X194" alt="">
+              </div>
+              <!-- project caption -->
+              <div class="caption-active-container">
+                <div class="caption-center">
+                  <div class="caption-content">
+                    <div class="caption-title">Project Example</div>
+                    <div class="caption-desc">Example Caption</div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </li>
+          <!-- project 2 -->
+          <li class="prod-item">
+            <a class="caption" data-title="Project<br>Example" href="">
+              <!-- project image -->
+              <div class="prod-image">
+                <img src="http://placehold.it/318X194" alt="">
+              </div>
+              <!-- project caption -->
+              <div class="caption-active-container">
+                <div class="caption-center">
+                  <div class="caption-content">
+                    <div class="caption-title">Project Example</div>
+                    <div class="caption-desc">Example Caption</div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </li>
+          <!-- project 3 -->
+          <li class="prod-item">
+            <a class="caption" data-title="Project<br>Example" href="">
+              <!-- project image -->
+              <div class="prod-image">
+                <img src="http://placehold.it/304X360" alt="">
+              </div>
+              <!-- project caption -->
+              <div class="caption-active-container">
+                <div class="caption-center">
+                  <div class="caption-content">
+                    <div class="caption-title">Project Example</div>
+                    <div class="caption-desc">Example Caption</div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </li>
+          <!-- project 4 -->
+          <li class="prod-item">
+            <a class="caption" data-title="Project<br>Example" href="">
+              <!-- project image -->
+              <div class="prod-image">
+                <img src="http://placehold.it/318X194" alt="">
+              </div>
+              <!-- project caption -->
+              <div class="caption-active-container">
+                <div class="caption-center">
+                  <div class="caption-content">
+                    <div class="caption-title">Project Example</div>
+                    <div class="caption-desc">Example Caption</div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </li>
+          <!-- project 5 -->
+          <li class="prod-item">
+            <a class="caption" data-title="Project<br>Example" href="">
+              <!-- project image -->
+              <div class="prod-image">
+                <img src="http://placehold.it/304X360" alt="">
+              </div>
+              <!-- project caption -->
+              <div class="caption-active-container">
+                <div class="caption-center">
+                  <div class="caption-content">
+                    <div class="caption-title">Project Example</div>
+                    <div class="caption-desc">Example Caption</div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </li>
+          <!-- project 6 -->
+          <li class="prod-item">
+            <a class="caption" data-title="Project<br>Example" href="">
+              <!-- project image -->
+              <div class="prod-image">
+                <img src="http://placehold.it/318X194" alt="">
+              </div>
+              <!-- project caption -->
+              <div class="caption-active-container">
+                <div class="caption-center">
+                  <div class="caption-content">
+                    <div class="caption-title">Project Example</div>
+                    <div class="caption-desc">Example Caption</div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </li>
+          <!-- project 7 -->
+          <li class="prod-item">
+            <a class="caption" data-title="Project<br>Example" href="">
+              <!-- project image -->
+              <div class="prod-image">
+                <img src="http://placehold.it/304X360" alt="">
+              </div>
+              <!-- project caption -->
+              <div class="caption-active-container">
+                <div class="caption-center">
+                  <div class="caption-content">
+                    <div class="caption-title">Project Example</div>
+                    <div class="caption-desc">Example Caption</div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </li>
+          <!-- project 8 -->
+          <li class="prod-item">
+            <a class="caption" data-title="Project<br>Example" href="">
+              <!-- project image -->
+              <div class="prod-image">
+                <img src="http://placehold.it/318X194" alt="">
+              </div>
+              <!-- project caption -->
+              <div class="caption-active-container">
+                <div class="caption-center">
+                  <div class="caption-content">
+                    <div class="caption-title">Project Example</div>
+                    <div class="caption-desc">Example Caption</div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </li>
+          <!-- project 9 -->
+          <li class="prod-item">
+            <a class="caption" data-title="Project<br>Example" href="">
+              <!-- project image -->
+              <div class="prod-image">
+                <img src="http://placehold.it/318X194" alt="">
+              </div>
+              <!-- project caption -->
+              <div class="caption-active-container">
+                <div class="caption-center">
+                  <div class="caption-content">
+                    <div class="caption-title">Project Example</div>
+                    <div class="caption-desc">Example Caption</div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div><!-- .row -->
+      <!-- recent projects button -->
+      <div class="text-center">
+        <a href="#" class="btn dark-gray-btn">View All Work</a>
+      </div>
+    </section><!-- #recent-projects -->
+
+    <div class="add30"></div>
+
+    <!-- about us section -->
+    <section class="about-us">
+      <div class="container">
+        <div class="center-heading">
+          <h2>About <strong>Us</strong></h2>
+          <span class="center-line"></span>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <p>Lorem ipsum dolor sit amet, veniam audire graecis mea at, cu summo essent option nec, mea ex stet latine facilis. Eam molestie perpetua at. Cum ea nibh regione complectitur, ut nam homero nominavi. Et ignota posidonium est, alterum evertitur quo et. Nec fugit pericula ad. Lorem ipsum dolor sit amet, veniam audire graecis mea at, cu summo essent option nec, mea ex stet latine facilis. Eam molestie perpetua at. Cum ea nibh regione complectitur, ut nam homero nominavi. Et ignota posidonium est, alterum evertitur quo et. Nec fugit pericula ad.</p>
+          </div>
+          <div class="col-md-6">
+            <p>Lorem ipsum dolor sit amet, veniam audire graecis mea at, cu summo essent option nec, mea ex stet latine facilis. Eam molestie perpetua at. Cum ea nibh regione complectitur, ut nam homero nominavi. Et ignota posidonium est, alterum evertitur quo et. Nec fugit pericula ad. Lorem ipsum dolor sit amet, veniam audire graecis mea at, cu summo essent option nec, mea ex stet latine facilis. Eam molestie perpetua at. Cum ea nibh regione complectitur, ut nam homero nominavi. Et ignota posidonium est, alterum evertitur quo et. Nec fugit pericula ad.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- info section -->
+    <section id="info" class="container">
+      <div class="row">
+        <div class="col-md-6 col-sm-12 no-padding img-2">
+          <div class="">
+            <div>&nbsp;</div>
+          </div>
+        </div>
+        <!-- info content -->
+        <div class="col-md-6 col-sm-12">
+          <div class="info-content">
+            <h3>This is an H3 Title</h3>
+            <!-- info 1 -->
+            <div class="info-container">
+              <!-- icon -->
+              <div class="icon-container">
+                <i class="fa fa-users"></i>
+              </div>
+              <!-- content -->
+              <div class="info-text">
+                <h4>Lorem Ipsum Dolor</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing metus. elit. Quisque rutrum pellentesque imperdiet.</p>
+              </div>
+            </div><!-- .info-container -->
+
+            <!-- info 2 -->
+            <div class="info-container">
+              <!-- icon -->
+              <div class="icon-container">
+                <i class="fa fa-calendar"></i>
+              </div>
+              <!-- content -->
+              <div class="info-text">
+                <h4>Lorem Ipsum Dolor</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing metus. elit. Quisque rutrum pellentesque imperdiet.</p>
+              </div>
+            </div><!-- .info-container -->
+
+            <div class="info-container">
+              <!-- icon -->
+              <div class="icon-container">
+                <i class="fa fa-comments-o"></i>
+              </div>
+              <!-- content -->
+              <div class="info-text">
+                <h4>Lorem Ipsum Dolor</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing metus. elit. Quisque rutrum pellentesque imperdiet.</p>
+              </div>
+            </div><!-- .info-container -->
+            <!-- button -->
+            <div>
+              <a href="#" class="btn dark-gray-btn">Purchase Now</a>
+            </div>
+            <div class="add20"></div>
+          </div><!-- .info-content -->
+        </div>
+      </div>
+    </section><!-- #info -->
+
+    <!-- <section class="fun-fact-wrap fun-facts-bg">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 margin20 facts-in">
+          </div>
+          <div class="col-md-3 margin20 facts-in">
+          </div>
+          <div class="col-md-3 margin20 facts-in">
+          </div>
+          <div class="col-md-3 margin20 facts-in">
+          </div>
+        </div>
+      </div>
+    </section> -->
+
+    <!-- thumb grid -->
+    <!-- <section id="thumb-grid" class="container cbp-caption-active cbp-caption-overlayBottomAlong">
+      <div class="row"> -->
+        <!-- project 1 -->
+        <!-- <div class="thumb-item col-md-3">
+          <div class="">
+            <a class="cbp-caption" data-title="Project<br>Example" href="#"> -->
+              <!-- project image -->
+              <!-- <div class="cbp-caption-defaultWrap">
+                <img src="http://placehold.it/270x180" alt="">
+              </div> -->
+              <!-- project caption -->
+              <!-- <div class="cbp-caption-activeWrap">
+                <div class="cbp-l-caption-alignCenter">
+                  <div class="cbp-l-caption-body">
+                    <div class="caption-title">Project Example</div>
+                    <div class="caption-desc">Example Caption</div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div> -->
+        <!-- project 2 -->
+        <!-- <div class="thumb-item col-md-3">
+          <div class="">
+            <a class="cbp-caption" data-title="Project<br>Example" href="#"> -->
+              <!-- project image -->
+              <!-- <div class="cbp-caption-defaultWrap">
+                <img src="http://placehold.it/270x180" alt="">
+              </div> -->
+              <!-- project caption -->
+              <!-- <div class="cbp-caption-activeWrap">
+                <div class="cbp-l-caption-alignCenter">
+                  <div class="cbp-l-caption-body">
+                    <div class="caption-title">Project Example</div>
+                    <div class="caption-desc">Example Caption</div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div> -->
+        <!-- project 3 -->
+        <!-- <div class="thumb-item col-md-3">
+          <div class="">
+            <a class="cbp-caption" data-title="Project<br>Example" href="#"> -->
+              <!-- project image -->
+              <!-- <div class="cbp-caption-defaultWrap">
+                <img src="http://placehold.it/270x180" alt="">
+              </div> -->
+              <!-- project caption -->
+              <!-- <div class="cbp-caption-activeWrap">
+                <div class="cbp-l-caption-alignCenter">
+                  <div class="cbp-l-caption-body">
+                    <div class="caption-title">Project Example</div>
+                    <div class="caption-desc">Example Caption</div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div> -->
+        <!-- project 4 -->
+        <!-- <div class="thumb-item col-md-3">
+          <div class="">
+            <a class="cbp-caption cbp-lightbox" data-title="Project<br>Example" href="#"> -->
+              <!-- project image -->
+              <!-- <div class="cbp-caption-defaultWrap">
+                <img src="http://placehold.it/270x180" alt="">
+              </div> -->
+              <!-- project caption -->
+              <!-- <div class="cbp-caption-activeWrap">
+                <div class="cbp-l-caption-alignCenter">
+                  <div class="cbp-l-caption-body">
+                    <div class="caption-title">Project Example</div>
+                    <div class="caption-desc">Example Caption</div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div> -->
+        <!-- project 5 -->
+        <!-- <div class="thumb-item col-md-3">
+          <div class="">
+            <a class="cbp-caption" data-title="Project<br>Example" href="#"> -->
+              <!-- project image -->
+              <!-- <div class="cbp-caption-defaultWrap">
+                <img src="http://placehold.it/270x180" alt="">
+              </div> -->
+              <!-- project caption -->
+              <!-- <div class="cbp-caption-activeWrap">
+                <div class="cbp-l-caption-alignCenter">
+                  <div class="cbp-l-caption-body">
+                    <div class="caption-title">Project Example</div>
+                    <div class="caption-desc">Example Caption</div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div> -->
+        <!-- project 6 -->
+        <!-- <div class="thumb-item col-md-3">
+          <div class="">
+            <a class="cbp-caption" data-title="Project<br>Example" href="#"> -->
+              <!-- project image -->
+              <!-- <div class="cbp-caption-defaultWrap">
+                <img src="http://placehold.it/270x180" alt="">
+              </div> -->
+              <!-- project caption -->
+              <!-- <div class="cbp-caption-activeWrap">
+                <div class="cbp-l-caption-alignCenter">
+                  <div class="cbp-l-caption-body">
+                    <div class="caption-title">Project Example</div>
+                    <div class="caption-desc">Example Caption</div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div> -->
+        <!-- project 7 -->
+        <!-- <div class="thumb-item col-md-3">
+          <div class="">
+            <a class="cbp-caption" data-title="Project<br>Example" href="#"> -->
+              <!-- project image -->
+              <!-- <div class="cbp-caption-defaultWrap">
+                <img src="http://placehold.it/270x180" alt="">
+              </div> -->
+              <!-- project caption -->
+              <!-- <div class="cbp-caption-activeWrap">
+                <div class="cbp-l-caption-alignCenter">
+                  <div class="cbp-l-caption-body">
+                    <div class="caption-title">Project Example</div>
+                    <div class="caption-desc">Example Caption</div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div> -->
+        <!-- project 8 -->
+        <!-- <div class="thumb-item col-md-3">
+          <div class="">
+            <a class="cbp-caption cbp-lightbox" data-title="Project<br>Example" href="#"> -->
+              <!-- project image -->
+              <!-- <div class="cbp-caption-defaultWrap">
+                <img src="http://placehold.it/270x180" alt="">
+              </div> -->
+              <!-- project caption -->
+              <!-- <div class="cbp-caption-activeWrap">
+                <div class="cbp-l-caption-alignCenter">
+                  <div class="cbp-l-caption-body">
+                    <div class="caption-title">Project Example</div>
+                    <div class="caption-desc">Example Caption</div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div> -->
+        <!-- project 9 -->
+        <!-- <div class="thumb-item col-md-3">
+          <div class="">
+            <a class="cbp-caption" data-title="Project<br>Example" href="#"> -->
+              <!-- project image -->
+              <!-- <div class="cbp-caption-defaultWrap">
+                <img src="http://placehold.it/270x180" alt="">
+              </div> -->
+              <!-- project caption -->
+              <!-- <div class="cbp-caption-activeWrap">
+                <div class="cbp-l-caption-alignCenter">
+                  <div class="cbp-l-caption-body">
+                    <div class="caption-title">Project Example</div>
+                    <div class="caption-desc">Example Caption</div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div> -->
+        <!-- project 10 -->
+        <!-- <div class="thumb-item col-md-3">
+          <div class="">
+            <a class="cbp-caption" data-title="Project<br>Example" href="#"> -->
+              <!-- project image -->
+              <!-- <div class="cbp-caption-defaultWrap">
+                <img src="http://placehold.it/270x180" alt="">
+              </div> -->
+              <!-- project caption -->
+              <!-- <div class="cbp-caption-activeWrap">
+                <div class="cbp-l-caption-alignCenter">
+                  <div class="cbp-l-caption-body">
+                    <div class="caption-title">Project Example</div>
+                    <div class="caption-desc">Example Caption</div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div> -->
+        <!-- project 11 -->
+        <!-- <div class="thumb-item col-md-3">
+          <div class="">
+            <a class="cbp-caption" data-title="Project<br>Example" href="#"> -->
+              <!-- project image -->
+              <!-- <div class="cbp-caption-defaultWrap">
+                <img src="http://placehold.it/270x180" alt="">
+              </div> -->
+              <!-- project caption -->
+              <!-- <div class="cbp-caption-activeWrap">
+                <div class="cbp-l-caption-alignCenter">
+                  <div class="cbp-l-caption-body">
+                    <div class="caption-title">Project Example</div>
+                    <div class="caption-desc">Example Caption</div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div> -->
+        <!-- project 12 -->
+        <!-- <div class="thumb-item col-md-3">
+          <div class="">
+            <a class="cbp-caption cbp-lightbox" data-title="Project<br>Example" href="#"> -->
+              <!-- project image -->
+              <!-- <div class="cbp-caption-defaultWrap">
+                <img src="http://placehold.it/270x180" alt="">
+              </div> -->
+              <!-- project caption -->
+              <!-- <div class="cbp-caption-activeWrap">
+                <div class="cbp-l-caption-alignCenter">
+                  <div class="cbp-l-caption-body">
+                    <div class="caption-title">Project Example</div>
+                    <div class="caption-desc">Example Caption</div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div> -->
+      <!-- </div> --><!-- .row -->
+    <!-- </section> --><!-- #thumb-grid -->
+
+    <footer>
+    	<!-- footer wrapper -->
+    	<div id="footer-wrapper" class="fun-facts-bg">
+    		<div class="container">
+    			<div class="row">
+    				<div class="col-md-3 col-sm-3 col-xs-12">
+    					<div class="footer-headline">
+    						<h2><small>Important Info</small></h2>
+    					</div>
+    					<p>Lorem ipsum dolor sit amet, mea labitur percipit rationibus id. Sumo nobis efficiendi eu duo, ad vix sint habeo suscipiantur.
+    					</p>
+    				</div>
+    				<div class="col-md-3 col-sm-3 col-xs-12">
+    					<div class="footer-headline">
+    						<h2><small>Quick Links</small></h2>
+    					</div>
+    					<ul class="list-unstyled link-list">
+    						<li><a href="/page2.php">Pages</a></li>
+    						<li><a href="/blog.php">Blog</a></li>
+    						<li><a href="#">Portfolio</a></li>
+    						<li><a href="/contact-us.php">Contact Us</a></i></li>
+    					</ul>
+    				</div>
+    				<div class="col-md-3 col-sm-3 col-xs-12">
+    					<div class="footer-headline">
+    						<h2><small>Latest Posts</small></h2>
+    					</div>
+    					<ul class="list-unstyled link-list">
+    						<li><a href="">Blog Post 1<small>Nov 16, 2015</small></a></li>
+    						<li><a href="">Blog Post 2<small>Oct 5, 2015</small></a></li>
+    						<li><a href="">Blog Post 3<small>Aug 22, 2015</small></a></li>
+    					</ul>
+    				</div>
+    				<div class="col-md-3 col-sm-3 col-xs-12">
+    					<div class="footer-headline">
+    						<h2><small>Contact Us</small></h2>
+    					</div>
+    					<p>25, Lorem Lis Street, Green<br/>
+    					Oregon, US<br/>
+    					Phone: 800.123.3456<br/>
+    					Fax: 800.123.3456<br/>
+    					Email: <a href="">info@yourcompany.com</a>
+    					</p>
+    				</div>
+    			</div>
+    		</div>
+    	</div>
+    </footer>
+
+    <!-- Copyright text -->
+    <div class="copyright">
+    	<div class="container">
+    		<div class="row">
+    			<div class="col-md-6">
+    				<p>2017 All Rights Reserved. <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+    			</div>
+    			<!-- Social links -->
+    			<div class="col-md-6">
+    				<ul class="social-icons right">
+    					<li>
+    						<a href="https://www.facebook.com/" target="_blank" class="tooltips" data-toggle="tooltip" data-placement="top" title="" data-original-title="Facebook">
+    							<i class="fa fa-facebook"></i>
+    						</a>
+    					</li>
+    					<li>
+    						<a href="https://www.instagram.com/" target="_blank" class="tooltips" data-toggle="tooltip" data-placement="top" title="" data-original-title="Instagram">
+    							<i class="fa fa-instagram"></i>
+    						</a>
+    					</li>
+    					<li>
+    						<a href="https://twitter.com/" target="_blank" class="tooltips" data-toggle="tooltip" data-placement="top" title="" data-original-title="Twitter">
+    							<i class="fa fa-twitter"></i>
+    						</a>
+    					</li>
+    					<li>
+    						<a href="https://plus.google.com" target="_blank" class="tooltips" data-toggle="tooltip" data-placement="top" title="" data-original-title="Google Plus">
+    							<i class="fa fa-google-plus"></i>
+    						</a>
+    					</li>
+    					<li>
+    						<a href="https://www.linkedin.com/" target="_blank" class="tooltips" data-toggle="tooltip" data-placement="top" title="" data-original-title="Linkedin">
+    							<i class="fa fa-linkedin"></i>
+    						</a>
+    					</li>
+    					<li>
+    						<a href="https://dribbble.com/" target="_blank" class="tooltips" data-toggle="tooltip" data-placement="top" title="" data-original-title="Dribbble">
+    							<i class="fa fa-dribbble"></i>
+    						</a>
+    					</li>
+    					<li>
+    						<a href="https://www.skype.com/en/" target="_blank" class="tooltips" data-toggle="tooltip" data-placement="top" title="" data-original-title="Skype">
+    							<i class="fa fa-skype"></i>
+    						</a>
+    					</li>
+    				</ul>
+    			</div>
+    		</div>
+    	</div>
+    </div><!-- end .copyright -->
+
+  </div><!-- end main container -->
+
+  <script src="./js/masonry.pkgd.min.js"></script>
+  <script src="./js/imagesloaded.js"></script>
+  <script src="./js/classie.js"></script>
+  <script src="./js/AnimOnScroll.js"></script>
+
+
+<script>
+	new AnimOnScroll( document.getElementById('grid'), {
+		minDuration : 0.4,
+		maxDuration : 0.7,
+		viewportFactor : 0.2
+	} );
+</script>
+<script>
+  const nav = document.querySelector('#main');
+  const topOfNav = nav.offsetTop;
+
+  function fixNav() {
+    if(window.scrollY >= topOfNav) {
+      document.body.style.paddingTop = nav.offsetHeight + 'px';
+      document.body.classList.add('fixed-nav');
+    } else {
+      document.body.style.paddingTop = 0;
+      document.body.classList.remove('fixed-nav');
+    }
+  }
+
+  window.addEventListener('scroll', fixNav);
+</script>
+
+</body>
+</html>
